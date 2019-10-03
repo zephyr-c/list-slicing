@@ -89,6 +89,9 @@ def custom_extend(input_list, second_list):
         True
 
     """
+    for i in range(custon_len(second_list)):
+        custom_append(input_list, second_list[i])
+
 
     pass
 
