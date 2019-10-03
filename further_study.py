@@ -60,6 +60,16 @@ def custom_append(input_list, value):
         True
 
     """
+    new_list = list(range(custom_len(input_list)+1))
+
+    new_list[-1] = value
+
+    new_list[:-1] = input_list
+
+    input_list[:] = []
+
+    input_list[:] = new_list[:]
+
 
     pass
 
