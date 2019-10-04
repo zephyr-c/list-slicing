@@ -229,6 +229,10 @@ def custom_reverse(input_list):
 
     """
 
+    
+    reverse_list = input_list[::-1]
+    input_list[:]=reverse_list[:]
+
     pass
 
 
