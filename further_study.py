@@ -275,8 +275,14 @@ def custom_equality(some_list, another_list):
         False
 
     """
+    if custom_len(some_list) != custom_len(another_list):
+        return False
+    else:
+        for i in range(custom_len(some_list)):
+            if some_list[i] != another_list[i]:
+                return False
 
-    return None
+    return True
 
 
 ##############################################################################
