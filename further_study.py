@@ -89,7 +89,7 @@ def custom_extend(input_list, second_list):
         True
 
     """
-    for i in range(custon_len(second_list)):
+    for i in range(custom_len(second_list)):
         custom_append(input_list, second_list[i])
 
 
@@ -110,6 +110,13 @@ def custom_insert(input_list, index, value):
         True
 
     """
+    save = input_list[index:]
+
+    input_list[:] = input_list[:index]
+
+    custom_append(input_list, value)
+
+    custom_extend(input_list, save)
 
     pass
 
