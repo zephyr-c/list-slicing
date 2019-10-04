@@ -165,8 +165,11 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
+    last = input_list[-1]
 
-    return None
+    input_list[:] = input_list[:-1]
+
+    return last
 
 
 def custom_index(input_list, value):
