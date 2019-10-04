@@ -136,6 +136,16 @@ def custom_remove(input_list, value):
         True
 
     """
+    store = 0
+    for i in range(custom_len(input_list)):
+        if input_list[i] == value:
+            store = i
+            break
+
+    save = input_list[store+1:]
+    input_list[:] = input_list[:store]
+
+    custom_extend(input_list,save)
 
     pass
 
